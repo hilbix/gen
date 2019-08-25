@@ -5,6 +5,7 @@ make_task:
   prep_script: ./setup.sh
   make_script: make -C config
   debug_script: make -C config debug
+  out_script: ls -al config/out/
   example_script: cat config/out/example.org
   letsencrypt_script: cat config/out/letsencrypt.http
 
