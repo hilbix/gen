@@ -52,7 +52,7 @@ Hints?
 
 WTF why?
 
-- Because keeping a fleet of sites with all those changing standars is a PITA.
+- Because keeping a fleet of sites with all those changing standards is a PITA.
 - Hence I needed something to bundle it.
 - The problem is with NginX not offering configuration macros, so you need some script to create the site include.
 
@@ -71,16 +71,16 @@ Changes? Contrib?
 
 License?
 
-- Are you kidding?  This is an absulutely trivial basic no-brainer open knowledge!
+- Are you kidding?  This is an absolutely trivial basic open knowledge no-brainer!
 - In this universe there are some basic rules, and one is that things like this here cannot be copyrighted.
-- So this is Public Domain.  Open speech.  Rants.  Whatever.
+- So this is Public Domain.  Open speech.  Rants.  Whatever you like.
 - **INTELLECTUAL PROPRIETARY RIGHTS ARE SLAVERY!**  Slavery must be abolished.
 
 But ..
 
-- No!  Definitively no.  No buts, no objections, no nothing.  Not!
-- The scripting I have done was done in a hurry.  And there is absolutely nothing to it.
+- No!  Definitively no.  No buts, no objections, no nothing.  No not no!
+- The scripting I did was done in a hurry.  And there is absolutely nothing to it.  Plain straight forward.
 - There was something needed to reduce the NginX config complexity.  This is, what came out.
 - This all is a no-brainer.  This text here is even more difficult to understand than the Makefile!
-- And this all here is just some mini-dump of a region of my brain openly performed to an open audience.
+- Please see this all here as just some mini-dump of a region of my brain, openly performed to an open audience.
 
