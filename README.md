@@ -3,6 +3,8 @@
 >
 > Probably this will be extended in future to other things.
 
+[![branch: cirrus](https://api.cirrus-ci.com/github/hilbix/gen.svg?branch=cirrus)](https://cirrus-ci.com/github/hilbix/gen)
+
 
 # Config generator
 
