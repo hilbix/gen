@@ -63,11 +63,11 @@ Why Makefiles?
 
 Bugs? Contact?
 
-- Issue on GitHub, eventyally I listen.
+- Issue on GitHub, eventually I listen.
 
 Changes? Contrib?
 
-- PR on GitHub, eventyally I listen.
+- PR on GitHub, eventually I listen.
 
 License?
 
