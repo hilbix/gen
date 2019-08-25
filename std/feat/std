@@ -1,0 +1,21 @@
+# standardized features
+
+*feat	accelerometer
+*feat	ambient-light-sensor
+*feat	autoplay
+*feat	camera
+*feat	document-domain
+*feat	execution-while-not-rendered
+*feat	execution-while-out-of-viewport
+*feat	fullscreen
+*feat	gyroscope
+*feat	magnetometer
+*feat	microphone
+*feat	midi
+*feat	payment
+*feat	picture-in-picture
+*feat	sync-xhr
+*feat	usb
+*feat	wake-lock
+*feat	xr
+

@@ -1,0 +1,15 @@
+# Experimental features
+
+*feat	document-write
+*feat	font-display-late-swap
+*feat	layout-animations
+*feat	loading-frame-default-eager
+*feat	loading-image-default-eager
+*feat	legacy-image-formats
+*feat	oversized-images
+*feat	sync-script
+*feat	unoptimized-images
+*feat	unsized-media
+*feat	vertical-scroll
+*feat	serial
+

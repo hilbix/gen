@@ -1,0 +1,14 @@
+# Proposed features
+
+*feat	ch-device-memory
+*feat	ch-downlink
+*feat	ch-dpr
+*feat	ch-width
+*feat	ch-viewport-width
+*feat	ch-save-data
+
+*feat	encrypted-media
+*feat	geolocation
+*feat	speaker
+*feat	webauthn
+

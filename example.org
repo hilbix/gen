@@ -1,0 +1,9 @@
+# Example site description
+
+nginx	443
+ssl	on hsts
+csp	max
+#feat	std
+referer	best
+php	min
+

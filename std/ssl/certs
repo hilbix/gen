@@ -1,0 +1,7 @@
+ssl	on
+
+# Use SSL certs from LetsEncrypt.org
+	ssl_trusted_certificate		/etc/letsencrypt/certs/{NAME}/chain.pem;
+	ssl_certificate_key		/etc/letsencrypt/certs/{NAME}/privkey.pem;
+	ssl_certificate			/etc/letsencrypt/certs/{NAME}/fullchain.pem;
+

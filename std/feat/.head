@@ -1,0 +1,7 @@
+# When will https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Feature-Policy reach 1 TiB+?
+# When will https://github.com/w3c/webappsec-feature-policy/blob/master/features.md use up all GH disk space?
+
+!.	add_header	Feature-Policy			"{FEATURE}";
+
+=feat.default 'none'
+

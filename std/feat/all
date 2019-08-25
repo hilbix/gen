@@ -1,0 +1,4 @@
+# include (usually: disable) all features
+
+feat	std old proposed experimental misc tino missing
+

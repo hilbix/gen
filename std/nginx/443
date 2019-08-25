@@ -1,0 +1,6 @@
+nginx	name
+
+	listen		443		ssl {nginx.default};
+	listen		[::]:443	ssl {nginx.default};
+
+!nginx	root

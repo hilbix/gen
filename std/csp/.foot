@@ -1,0 +1,4 @@
+# CSP
+
+!	add_header	Content-Security-Policy		"frame-ancestors 'none'; default-src 'none'; connect-src 'self'{csp.connect-src}; font-src 'self'; img-src 'self'{csp.img-src}; script-src 'self'; style-src 'self'; base-uri 'self'; form-action 'self'";
+

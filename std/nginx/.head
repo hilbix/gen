@@ -1,0 +1,6 @@
+.server {
+	server_tokens	off;
+
+=nginx.default
+???nginx.root=nginx.root	/var/www/{{}ROOT}/www;
+

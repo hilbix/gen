@@ -1,0 +1,7 @@
+nginx	name
+
+	listen		80	{nginx.default};
+	listen		[::]:80	{nginx.default};
+
+!nginx	root
+

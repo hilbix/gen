@@ -1,0 +1,21 @@
+# A minimal port 80 service
+# which allows to use LetEncrypt's HTTP challenge
+# and redirect everything else to HTTPS.
+#
+# see also: https://raw.githubusercontent.com/wiki/hilbix/dehydrated/hook.sh
+
+=nginx.root	/etc/letsencrypt/web
+nginx	def 80 lb log
+
+	location /.well-known/ {
+		try_files	$uri @redirect;
+	}
+
+	location / {
+		return	301	https://$host$request_uri;
+	}
+
+	location @redirect {
+		return	301	https://$host$request_uri;
+	}
+

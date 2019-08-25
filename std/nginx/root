@@ -1,0 +1,4 @@
+???ROOT=ROOT {NAME}
+???nginx.root	/var/www/{{}ROOT}/www
+{}!	root		{nginx.root};
+
