@@ -39,7 +39,7 @@ Example:
 ## Howto
 
 - Please read the introductory comment in [`gen.sh`](gen.sh)
-- For an example see [`example.org`](./example.org)
+- For an example see [`letsencrypt.http`](./letsencrypt.http) or [`example.org`](https://raw.githubusercontent.com/hilbix/gen/master/example.org)
 - The cofiguration snippets are in [`std/` directory](std/)
 - `make debug` when something breaks
 
