@@ -1,3 +1,2 @@
 ???nginx.name=nginx.name {NAME} www.{NAME}
 	server_name	{nginx.name};
-

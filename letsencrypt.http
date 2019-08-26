@@ -18,4 +18,3 @@ nginx	def 80 lb log
 	location @redirect {
 		return	301	https://$host$request_uri;
 	}
-
