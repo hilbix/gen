@@ -36,11 +36,11 @@ Example:
 - It transforms all `*.*` files into `out/` according to `gen/std/`.
 - You can adapt/override everything in the directory `gen/`
 
-## Howto
+## HowTo
 
 - Please read the introductory comment in [`gen.sh`](gen.sh)
 - For an example see [`letsencrypt.http`](./letsencrypt.http) or [`example.org`](https://raw.githubusercontent.com/hilbix/gen/master/example.org)
-- The cofiguration snippets are in [`std/` directory](std/)
+- The configuration snippets are in [`std/` directory](std/)
 - `make debug` when something breaks
 
 
