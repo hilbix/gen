@@ -200,6 +200,7 @@ process()
         debug delay "${line#'!'}";
         return
         ;;
+  ('')	[ -n "$COMPACT" ] && return;;	# ignore empty lines
   esac
 
   # replace {XXXX} with macro
@@ -259,12 +260,15 @@ process()
         ;;
 
   # Just feed lines not starting with an ASCII letter unchanged
-  ([!a-zA-Z]*)
-        [ ".$lastfile" = ".$file" ] || echo "#I#$file#$nr#0#${delays[*]:- }#"
+  (''|[!a-zA-Z]*)
+        [ -n "$line" ] || [ -n "$lastline" -a ".$lastfile" = ".$file" ] || return 0
+        [ -n "$QUIET" ] || [ ".$lastfile" = ".$file" ] || echo "#I#$file#$nr#0#${delays[*]:- }#"
         lastfile="$file"
         # remove a singlefileSPC or dot from lines (to be able to echo lines starting with A-Za-z)
-        o echo "${line#[ .]}"
-        debug out "${line#[ .]}"
+        line="${line#[ .]}"
+        lastline="$line"
+        o echo "$line"
+        debug out "$line"
         return
         ;;
   esac
@@ -350,7 +354,7 @@ parse()
         debugset "$1:$nr"
 
         case "$line" in
-        (''|\#*)	debug ign "$line"; continue;;	# ignore comments and completely empty lines
+        (\#*)	debug ign "$line"; continue;;	# ignore comments
         esac
 
         process "$line"

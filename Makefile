@@ -26,6 +26,16 @@ gen:
 	@[ -f '$(GEN)' ] || $(MAKE) -sC .. $@
 	'$(GEN)' || { echo; echo "	make debug	# for better diagnose"; echo; false; } >&2
 
+.PHONY:	quiet
+quiet:
+	@[ -f '$(GEN)' ] || $(MAKE) -sC .. $@
+	QUIET=: '$(GEN)'
+
+.PHONY:	compact
+compact:
+	@[ -f '$(GEN)' ] || $(MAKE) -sC .. $@
+	QUIET=: COMPACT=: '$(GEN)'
+
 .PHONY:	debug
 debug:
 	@[ -f '$(GEN)' ] || $(MAKE) -sC .. $@
