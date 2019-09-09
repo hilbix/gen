@@ -22,11 +22,16 @@ All you need is to `make love`.
 	git init conf
 	cd conf
 
+	git fetch https://github.com/hilbix/empty.git
+	git reset FETCH_HEAD
+	git tag empty
+
 	git submodule add https://github.com/hilbix/gen.git
 	git submodule update --init
-
 	ln -s gen/Makefile .
-	sudo make install
+
+	git add -A .
+	git commit -m .
 
 Example:
 
