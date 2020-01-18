@@ -1,6 +1,4 @@
-	location ~ /\.ht {
-		deny all;
-	}
+deny ht
 
 	index		index.html index.php;
 
