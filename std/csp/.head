@@ -1,3 +1,15 @@
-=csp.connect-src
-=csp.img-src
-=csp.script-src
+=x-frame-options	deny
+=csp.frame-ancestors	'none'
+=csp.default-src	'none'
+=csp.connect-src	'self'
+=csp.font-src	'self'
+=csp.img-src	'self'
+=csp.script-src	'self'
+=csp.style-src	'self'
+=csp.base-uri	'self'
+=csp.form-action	'self'
+
+=csp.frame-src
+=csp.child-src
+=csp.worker-src
+
