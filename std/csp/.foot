@@ -1,4 +1,19 @@
 # CSP
 
-!	add_header	Content-Security-Policy		"frame-ancestors 'none'; default-src 'none'; connect-src 'self'{csp.connect-src}; font-src 'self'; img-src 'self'{csp.img-src}; script-src 'self'{csp.script-src}; style-src 'self'; base-uri 'self'; form-action 'self'";
+:csp.header;
+-frame-ancestors {csp.frame-ancestors}
+-default-src {csp.default-src}
+-connect-src {csp.connect-src}
+-font-src {csp.font-src}
+-img-src {csp.img-src}
+-script-src {csp.script-src}
+-style-src {csp.style-src}
+-base-uri {csp.base-uri}
+-form-action {csp.form-action}
+?csp.child-src -child-src {csp.child-src}
+?csp.frame-src -frame-src {csp.frame-src}
+?csp.worker-src -worker-src {csp.worker-src}
+
+?x-frame-options!	add_header	X-Frame-Options			{x-frame-options};
+!	add_header	Content-Security-Policy		"{csp.header}";
 
