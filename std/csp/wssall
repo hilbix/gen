@@ -1,2 +1,3 @@
-=csp.connect-src  wss:
+:csp.connect-src
+-wss:
 
