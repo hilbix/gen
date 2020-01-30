@@ -1,4 +1,3 @@
-=x-frame-options	sameorigin
 :csp.frame-src
--self:
+-'self'
 
