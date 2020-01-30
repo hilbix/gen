@@ -15,11 +15,11 @@
 # dir file file..	include files in std/dir/file
 # *macro arg..		process dir/.macro with first arg {1}, second arg {2} and so on.
 # !<line>		delayed line (this is processed/expanded in the parent recursion)
-# ?VAR<line>		ignore line if VAR is unknown or empty
-# ??VAR<line>		ignore line if VAR is unknown
-# ???VAR<line>		ignore line if VAR is known
-# =VAR[optSPC]<line>	set VAR to line
-# :var[optSPC]<line>	defines the variable to gather into, and sets line as separator SEP (can be empty)
+# ?VAR[SPC]<line>	ignore line if VAR is unknown or empty
+# ??VAR[SPC]<line>	ignore line if VAR is unknown
+# ???VAR[SPC]<line>	ignore line if VAR is known
+# =VAR[SPC]<line>	set VAR to line
+# :var[SPC]<line>	defines the variable to <gather> into, and sets line as separator SEP (can be empty)
 # +<gather>		gathers var, SEP separated
 # -<gather>		gathers var, SEP SPC separated
 # ,<gather>		gathers var, ,SEP separated
@@ -28,6 +28,7 @@
 # .<line>		output line without the leading dot
 # <line>		output line if nothing above matches
 #
+# [SPC] is optional SPC or TAB
 # std/dir/.head is processed before anything in dir/
 # std/dir/.foot is processed after dir/ is processed
 #
